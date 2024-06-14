@@ -1,0 +1,17 @@
+C:\Users\alive\Code\cs\globular\globe\bin\Debug\net8.0\globe.exe
+C:\Users\alive\Code\cs\globular\globe\bin\Debug\net8.0\globe.deps.json
+C:\Users\alive\Code\cs\globular\globe\bin\Debug\net8.0\globe.runtimeconfig.json
+C:\Users\alive\Code\cs\globular\globe\bin\Debug\net8.0\globe.dll
+C:\Users\alive\Code\cs\globular\globe\bin\Debug\net8.0\globe.pdb
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.AssemblyInfoInputs.cache
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.AssemblyInfo.cs
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.csproj.CoreCompileInputs.cache
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.dll
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\refint\globe.dll
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.pdb
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.genruntimeconfig.cache
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\ref\globe.dll
+C:\Users\alive\Code\cs\globular\globe\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.csproj.AssemblyReference.cache
+C:\Users\alive\Code\cs\globular\globe\obj\Debug\net8.0\globe.csproj.Up2Date
