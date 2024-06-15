@@ -8,6 +8,7 @@ namespace Globular.Frame
 {
     public class FrameGenerator
     {
+        // Temp directory for the frame image, defined in TempPath namespace.
         public Temp temp;
 
         public FrameGenerator(Temp t)
@@ -51,7 +52,10 @@ namespace Globular.Frame
         }
     }
 
-
+    /**
+    *  Frame is a class that contains an image, a path, and a boolean ok
+    *  if ok if false then the frame is not valid
+    */
     public class Frame {
         public Image<Rgba32> frame;
         public string path;
