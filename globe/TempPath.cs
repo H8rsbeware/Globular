@@ -8,7 +8,7 @@ namespace Globular.TempPath
 {
     public class Temp
     {
-        /*
+        /**
         * This class is used to create a temporary directory `Temp.ABSOLUTE_PATH`, store it, and provide a method to concatenate a path to it.        
         */
         public string ABSOLUTE_PATH = CreateTempPath();
@@ -43,16 +43,19 @@ namespace Globular.TempPath
                     return ABSOLUTE_PATH + "\\" + path;
             }
         }
-
+        /**
+        * SaveInitialBackground saves the initial background image path to `INITIAL_BACKGROUND_PATH` if the system is Windows.
+        */
         public void SaveInitialBackground()
         {   
+            // checks the OS. TODO: add support for other OSs.
             if (! RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 return;
             var key = Registry.CurrentUser.OpenSubKey("Control Panel\\Desktop"); 
             
             if(key == null)
                 return;
-            
+            // modified from https://www.whitebyte.info/programming/why-being-a-programmer-ist-great-or-how-to-get-the-current-windows-wallpaper-in-c
             byte[]? path = (byte[]?)key.GetValue("TranscodedImageCache");
             string wallpaper_file = Encoding.Unicode.GetString(GetSlice(path, 24)).TrimEnd("\0".ToCharArray());
 
@@ -61,7 +64,7 @@ namespace Globular.TempPath
                 INITIAL_BACKGROUND_PATH = wallpaper_file;
             }
         }
-
+        // GetSlice is a helper function that returns a slice (copy) of a byte array.
         // Source: http://stackoverflow.com/a/406576/441907
         static byte[] GetSlice(byte[]? source, int pos)
         {
@@ -75,9 +78,11 @@ namespace Globular.TempPath
 
         public void ReplaceBackground()
         {
+            // Handles changing the background image with a variety of input types.
             BackgroundSetter backgroundSetter = new BackgroundSetter();
 
-            if (INITIAL_BACKGROUND_PATH != "")
+            // If the original bg image is found, replace it.
+            if (INITIAL_BACKGROUND_PATH != "")            
                 backgroundSetter.SetBackground(INITIAL_BACKGROUND_PATH);
         }
 

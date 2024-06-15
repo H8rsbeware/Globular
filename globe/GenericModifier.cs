@@ -4,7 +4,7 @@ using SixLabors.ImageSharp.PixelFormats;
 
 namespace Globular.Transformers
 {
-    /* Priority determines the order of execution of the modifiers
+    /** Priority determines the order of execution of the modifiers
     * BASE: can only be one in the chain, will be executed first  
     * NONE: will be executed first, unless a base is present, thus on the lowest layer
     * LOW | MEDIUM | HIGH: will be executed in the order of their priority
