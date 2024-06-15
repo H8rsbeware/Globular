@@ -1,0 +1,8 @@
+[*.cs]
+
+# SYSLIB0011: Type or member is obsolete
+dotnet_diagnostic.SYSLIB0011.severity = silent
+[*.cs]
+
+# SYSLIB0011: Type or member is obsolete
+dotnet_diagnostic.SYSLIB0011.severity = suggestion
