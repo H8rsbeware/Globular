@@ -6,6 +6,8 @@ using SixLabors.ImageSharp.Processing;
 using System.Runtime.InteropServices;
 using Globular.TempPath;
 
+using Globular.Frame;
+
 
 namespace Globular
 {
@@ -61,7 +63,7 @@ namespace Globular
             SetBackground(image);
         }
 
-        public void SetBackground(Frame.Frame frame)
+        public void SetBackground(FrameT frame)
         {   
             Image<Rgba32> f = frame.frame;
             if (frame.ok)

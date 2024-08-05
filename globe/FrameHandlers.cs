@@ -32,7 +32,7 @@ namespace Globular.Frame
         }
 
         /* Generate a black frame at a given path with a given width and height, returns a Globular.Frame containing path, image, and an ok */
-        public Frame GenerateBlankFrame(int width, int height)
+        public FrameT GenerateBlankFrame(int width, int height)
         {
             using (Image<Rgba32> image = new Image<Rgba32>(width, height))
             {
@@ -42,7 +42,7 @@ namespace Globular.Frame
                 image.Save(path);
                 
 
-                return new Frame(
+                return new FrameT(
                     image.Clone(),
                     path,
                     true
@@ -56,17 +56,19 @@ namespace Globular.Frame
     *  Frame is a class that contains an image, a path, and a boolean ok
     *  if ok if false then the frame is not valid
     */
-    public class Frame {
+    public class FrameT {
         public Image<Rgba32> frame;
         public string path;
         public bool ok;
 
-        public Frame(Image<Rgba32> frame, string path, bool ok)
+        public FrameT(Image<Rgba32> frame, string path, bool ok)
         {
             this.frame = frame;
             this.path = path;
             this.ok = ok;
         }
+
+        
     }
     
 
